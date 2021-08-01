@@ -1,0 +1,49 @@
+<nav style="margin-top:50px">
+<ul>
+    <li>
+        <%= link_to "Inicio", root_path%>
+    </li>
+      <li>
+        <%= link_to "Nuevo Usuario", new_users_path%>
+    </li>
+     <li>
+        <%= link_to "Usuarios", users_path%>
+    </li>
+</ul>
+</nav>
+
+<style>
+   *{
+       margin:0;
+       padding:0;
+   }
+   nav {
+    margin-top: 50px;
+    width:100%;
+}
+nav ul {
+    list-style: none;
+}
+nav > ul {
+    display: table;
+    overflow: hidden;
+    width:100%;
+    background:#000000;
+    position: relative;
+}
+nav > ul li {
+    display: table-cell;
+}
+nav > ul > li > ul {
+    display: none;
+}
+nav > ul li a {
+    color: #FFFFFF;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+</style>

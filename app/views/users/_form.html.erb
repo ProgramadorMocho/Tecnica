@@ -1,0 +1,64 @@
+<%= form_with(model:@user,local:true) do|form|%>
+    <div id="from">
+         <%=form.label :user %>
+         <%=form.text_field :user %>
+         <%=form.label :password %>
+         <%=form.text_field :password %>
+         <%=form.label :name %>
+         <%=form.text_field :name %>
+         <%=form.label :secondname %>
+         <%=form.text_field :secondname %>
+         <%=form.label :lastname %>
+         <%=form.text_field :lastname %>
+         <%=form.label :sec_lastname %>
+         <%=form.text_field :sec_lastname %>
+         <%=form.label :identification %>
+         <%=form.text_field :identification %>
+         <%=form.label :number_identification %>
+         <%=form.text_field :number_identification %>
+         <%=form.label :age %>
+         <%=form.text_field :age %>
+
+    <div id="boton">
+        <%=form.submit%>
+    </div>
+
+    </div>
+    <style>
+    form {
+        position: relative;
+        width  : 740px;
+        height : 498px;
+        margin : 0 auto;
+    }
+    label {
+        font : .8em "typewriter", sans-serif;
+    }
+    #from {
+        position: absolute;
+        left : 300px;
+        top  : 35px;
+    }
+    input {
+    height: 2.5em;
+    vertical-align: middle; 
+    display:block;
+    }
+    #boton {
+        left         : 440px;
+        top          : 360px;
+        padding      : 5px;
+        font         : bold .6em sans-serif;
+        border       : 2px solid #333;
+        border-radius: 5px;
+        background   : none;
+        cursor       : pointer;
+    }
+    #boton:hover,
+    #boton:focus {
+        outline   : none;
+        background: #000;
+        color   : #FFF;
+    }
+</style>
+<%end%>
