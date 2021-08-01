@@ -1,0 +1,2 @@
+# Tecnica
+ Prueba en Ruby
